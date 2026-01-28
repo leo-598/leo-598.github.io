@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<title>Tienda Online</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+background: #f5f5f5;
+}
+header {
+background: #111827;
+color: white;
+padding: 15px;
+text-align: center;
+}
+.productos {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+gap: 20px;
+padding: 20px;
+}
+.producto {
+background: white;
+border-radius: 8px;
+padding: 15px;
+box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+text-align: center;
+}
+.producto img {
+max-width: 100%;
+border-radius: 8px;
+}
+button {
+background: #2563eb;
+color: white;
+border: none;
+padding: 10px 15px;
+border-radius: 5px;
+cursor: pointer;
+margin-top: 10px;
+}
+button:hover {
+background: #1e40af;
+}
+footer {
+text-align: center;
+padding: 15px;
+background: #e5e7eb;
+}
+</style>
+</head>
+<body>
+<header>
+<h1>Mi Tienda Online</h1>
+<p>Compra productos fácil y rápido</p>
+</header>
+
+
+<section class="productos">
+<div class="producto">
+<img src="https://via.placeholder.com/300" alt="Producto 1">
+<h2>Producto 1</h2>
+<p>$50.000 COP</p>
+<button onclick="comprar('Producto 1')">Comprar</button>
+</div>
+
+
+<div class="producto">
+<img src="https://via.placeholder.com/300" alt="Producto 2">
+<h2>Producto 2</h2>
+<p>$80.000 COP</p>
+<button onclick="comprar('Producto 2')">Comprar</button>
+</div>
+</section>
+
+
+<footer>
+<p>© 2026 - Mi Tienda Online</p>
+</footer>
+
+
+<script>
+function comprar(producto) {
+alert('Has seleccionado: ' + producto);
+}
+</script>
+</body>
+</html>
